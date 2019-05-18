@@ -28,7 +28,10 @@
     overflow: scroll;
 }
 #l-receive .l-container .l-body .l-content{
+  box-sizing: border-box;
   margin-left: 28rpx;
+  margin-right: 28rpx;
+  /* margin: 0 28rpx 0 16rpx; */
   height: 142rpx;
   position: relative;
 }
@@ -54,6 +57,12 @@
   color: #202728;
   line-height: 44rpx;
   position: relative;
+}
+#l-receive .l-container .l-body .l-content .l-text .l-hidden{
+  width: 340rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 
 #l-receive .l-container .l-body .l-content .l-text .l-spot{

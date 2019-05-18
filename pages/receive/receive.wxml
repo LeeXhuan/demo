@@ -5,7 +5,10 @@
     <view class="l-body">
 			<view class="l-content" wx:for="{{receiveData.listData}}" wx:for-item="item" wx:key="index">
 				<view class="l-text-box">
-					<view class="l-text">{{item.name}}<view class="l-spot"></view></view>
+					<view class="l-text">
+						<view class="l-hidden">{{item.name}}</view>
+						<view class="l-spot"></view>
+					</view>
 					<view class="l-road">{{item.road}}</view>
 				</view>
 				<view class="l-time">{{item.time}}</view>
