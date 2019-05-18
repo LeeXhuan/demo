@@ -1,2 +1,10 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class='detail-bg'>
+  <view class='detail-con' style='background: url({{detailData.bgImg}}) no-repeat center/cover'>
+    <view class='title'>
+      <text class='title-text'>{{detailData.title}}</text>
+      <image class='title-icon' src="{{detailData.titleIcon}}"></image>
+    </view>
+    <view class='price-text'>{{detailData.priceText}}</view>
+  </view>
+</view>
