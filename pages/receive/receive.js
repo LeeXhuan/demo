@@ -77,5 +77,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  return:function(){
+    wx.navigateBack();
   }
 })
