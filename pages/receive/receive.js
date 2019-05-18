@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    detailData: {},
+    receiveData: {},
   },
 
   /**
@@ -14,19 +14,11 @@ Page({
   onLoad: function (options) {
     const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
-      bgImg: `${url}/ticket_detail%403x.png`,
-      title: '珠海公交专用',
-      titleIcon: `${url}/ticket_portrait%403x.png`,
-      priceText: '1.00元公交车票',
-      sentIcon: '../../images/ticket_detail_bg.png',
-      userIcon: '../../images/ticket_detail_bg.png',
-      userText: '你送出一张车票，正在等待领取',
-      contentText: '有效期至 06-13 23:59!',
-      contentIcon: '../../images/ticket_detail_bg.png',
-      buttonText: '立即领取',
+      title:"领取详情",
+
     }
     this.setData({
-      detailData: dataOptions,
+      receiveData: dataOptions,
     })
   },
 
