@@ -14,12 +14,46 @@
     color: #00D1F5;
 }
 #index .container{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 42rpx;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 42rpx 0;
 }
 #index .container .list{
-    width: 50%;
+    margin-top: 32rpx;
+    width: 308rpx;
     height: 396rpx;
+    box-sizing: border-box;
+    padding: 40rpx 48rpx 40rpx 40rpx;
+}
+#index .container .list .title{
+    display: flex;
+    justify-content: space-between;
+}
+#index .container .list .title .name{
+    font-size: 28rpx;
+    color: #FFFFFF;
+    line-height: 44rpx;
+    width: 128rpx;
+    height: 88rpx;
+}
+#index .container .list .title .icon{
+    width: 84rpx;
+    height: 32rpx;
+    margin-top: 8rpx;
+}
+#index .container .list .money{
+    font-size: 56rpx;
+    color: #FFFFFF;
+    line-height: 88rpx;
+}
+#index .container .list .source{
+    margin-top: 80rpx;
+    width: 100%;
+    font-size: 28rpx;
+    color: #737779;
+    text-align: center;
+    line-height: 24px;
 }

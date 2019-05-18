@@ -7,7 +7,13 @@
         </view>
     </view>
     <view class="container">
-        <navigator class="list" url="../detail/detail.wxml" wx:for="{{listData}}" wx:for-item="item"  wx:key="index" style="background: url({{item.bgUrl}});background-size: 100% 100%;">
+        <navigator class="list" wx:for="{{listData}}" wx:for-item="item"  wx:key="index" style="background: url({{item.bgUrl}});background-size: 100% 100%;"  url="../detail/detail?id{{item.id}}">
+            <view class="title">
+                <view class="name">{{item.name}}</view>
+                <view class="icon" style="background: url({{item.iconUrl}});background-size: 100% 100%;"></view>
+            </view>
+            <view class="money">{{item.money}}元</view>
+            <view class="source">{{item.source}}元</view>
         </navigator>
     </view>
 </view>
