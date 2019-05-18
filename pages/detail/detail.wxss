@@ -17,6 +17,7 @@
 .title{
   padding: 62rpx 48rpx 74rpx 72rpx;
   display: flex;
+  align-items:center;
 }
 .title-text{
   flex: 3;
@@ -27,4 +28,10 @@
 .title-icon{
   width: 56rpx;
   height: 56rpx;
+}
+.price-text{
+  font-size: 48rpx;
+  color: #fff;
+  text-align: left;
+  padding-left: 72rpx;
 }

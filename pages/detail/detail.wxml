@@ -5,5 +5,6 @@
       <text class='title-text'>{{detailData.title}}</text>
       <image class='title-icon' src="{{detailData.titleIcon}}"></image>
     </view>
+    <view class='price-text'>{{detailData.priceText}}</view>
   </view>
 </view>

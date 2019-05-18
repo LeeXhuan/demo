@@ -13,9 +13,9 @@ Page({
    */
   onLoad: function (options) {
     const dataOptions = {
-      bgImg: '../../images/ticket_detail@3x.png',
+      bgImg: 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images/ticket_detail%403x.png',
       title: '珠海公交专用',
-      titleIcon: '../../images/ticket_portrait@3x.png',
+      titleIcon: 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images/ticket_portrait%403x.png',
       priceText: '1.00元公交车票',
       sentIcon: '../../images/ticket_detail_bg.png',
       userIcon: '../../images/ticket_detail_bg.png',
