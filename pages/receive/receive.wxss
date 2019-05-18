@@ -29,9 +29,7 @@
 }
 #l-receive .l-container .l-body .l-content{
   box-sizing: border-box;
-  margin-left: 28rpx;
-  margin-right: 28rpx;
-  /* margin: 0 28rpx 0 16rpx; */
+  margin: 0 30rpx;
   height: 142rpx;
   position: relative;
 }
@@ -46,7 +44,7 @@
 }
 
 #l-receive .l-container .l-body .l-content:last-child::after{
-  border:none;
+  border: none;
 }
 #l-receive .l-container .l-body .l-content .l-text-box{
   display: flex;
@@ -66,8 +64,8 @@
 }
 
 #l-receive .l-container .l-body .l-content .l-text .l-spot{
-  width: 16rpx;
-  height: 16rpx;
+  width: 18rpx;
+  height: 18rpx;
   position: absolute;
   top: 0;
   bottom: 0;
