@@ -1,1 +1,25 @@
 /**index.wxss**/
+#index .flex{
+    display: flex;
+}
+#index .nav{
+    justify-content: space-around;
+    height: 104rpx;
+    line-height: 104rpx;
+    font-size: 28rpx;
+    color: #6E7375;
+    background: #fff;
+}
+#index .active{
+    color: #00D1F5;
+}
+#index .container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 42rpx;
+    display: flex;
+}
+#index .container .list{
+    width: 50%;
+    height: 396rpx;
+}

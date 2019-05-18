@@ -1,4 +1,13 @@
 <!--index.wxml-->
-<view class="container">
-33333
+<view id="index">
+    <view class="flex nav">
+        <view wx:for="{{navText}}" wx:for-item="item" wx:key="index" bindtap="switch" data-id="{{index}}">
+            <view wx:if="{{item.isActive}}" class="active">{{item.name}}</view>
+            <view wx:else>{{item.name}}</view>
+        </view>
+    </view>
+    <view class="container">
+        <navigator class="list" url="../detail/detail.wxml" wx:for="{{listData}}" wx:for-item="item"  wx:key="index" style="background: url({{item.bgUrl}});background-size: 100% 100%;">
+        </navigator>
+    </view>
 </view>
