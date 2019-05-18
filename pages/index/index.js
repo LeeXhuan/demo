@@ -3,10 +3,12 @@ const app = getApp()
 
 Page({
   data: {
-    navText: [],
-    listData: []
+    navText: [],// 导航
+    listData: []// 数据看列表
   },
   onLoad: function () {
+    const url = "https://raw.githubusercontent.com/LeeXhuan/demo/master/images/"
+    // 导航数据模拟
     let navText = [
       {
         name:"待使用"+2,
@@ -25,21 +27,40 @@ Page({
         isActive: false
       }
     ];
+    // 列表数据模拟
     let listData = [
       {
         id: 1,
-        bgUrl: "/images/ticket-mine.png",
-        iconUrl: "/images/to_be_used.png",
+        bgUrl: `${url}ticket-mine@3x.png`,
+        iconUrl: `${url}to_be_used@3x.png`,
         name: "珠海公交专用",
         money: "1.00",
         source: "好友赠送"
-      }
+      },
+      {
+        id: 2,
+        bgUrl: `${url}ticket-mine@3x.png`,
+        iconUrl: `${url}be_gifted@3x.png`,
+        name: "珠海公交专用",
+        money: "1.00",
+        source: "好友赠送"
+      },
+      {
+        id: 3,
+        bgUrl: `${url}ticket-mine2@3x.png`,
+        iconUrl: `${url}be_gifted@3x.png`,
+        name: "珠海公交专用",
+        money: "1.00",
+        source: "好友赠送"
+      },
     ];
+    // 数据更改
     this.setData({
       navText: navText,
       listData: listData
     });
   },
+  // 导航切换
   switch: function (e) {
     console.log(e);
     let index = e.currentTarget.dataset.id;
