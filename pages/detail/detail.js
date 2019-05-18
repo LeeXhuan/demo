@@ -14,6 +14,7 @@ Page({
   onLoad: function (options) {
     const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
+      id: options.id,
       bgImg: `${url}/ticket_detail%403x.png`,
       title: '珠海公交专用',
       titleIcon: `${url}/ticket_portrait%403x.png`,
@@ -30,6 +31,17 @@ Page({
       sentFriend: '赠给好友',
     }
     switch (options.id) {
+      case '0':
+        dataOptions.sentIcon = `${url}/Combined%20Shape%403x.png`;
+        dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
+        dataOptions.userText = '远行的帆…送你一张车票';
+        dataOptions.contentText = '24个小时内领取有效！';
+        dataOptions.buttonText = '立即领取';
+        dataOptions.toUseText = '';
+        dataOptions.usedText = '';
+        dataOptions.receiveText = '';
+        dataOptions.sentFriend = '';
+        break;
       case '1': 
         dataOptions.sentIcon = `${url}/to_be_used%403x.png`;
         dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;

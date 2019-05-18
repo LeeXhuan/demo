@@ -5,25 +5,45 @@
       <text class='x-title-text'>{{detailData.title}}</text>
       <image class='x-title-icon' src="{{detailData.titleIcon}}"></image>
     </view>
+
     <view class='x-price-text'>{{detailData.priceText}}</view>
+
     <view class='x-sent-icon' style='background: url({{detailData.sentIcon}}) no-repeat center/cover'></view>
+
     <view class='x-user-info'>
       <view wx:if="{{detailData.userIcon}}" class='x-use-icon' style='background: url({{detailData.userIcon}}) no-repeat center/cover'>
       </view>
       <text class='x-user-text'>{{detailData.userText}}</text>
     </view>
+
     <view class='x-content'>
       <text class='x-content-text'>{{detailData.contentText}}</text>
       <navigator url='../notice/notice'>
         <image class='x-content-icon' src="{{detailData.contentIcon}}"></image>
       </navigator>
     </view>
+    
     <view wx:if="{{detailData.buttonText}}" class='x-button'>{{detailData.buttonText}}</view>
-    <view wx:if="{{detailData.toUseText}}" class='x-button-use'>{{detailData.toUseText}}</view>
-    <view wx:if="{{detailData.usedText}}" class='x-button-used'>{{detailData.usedText}}</view>
-    <view wx:if="{{detailData.receiveText}}" class='x-receive'>{{detailData.receiveText}}</view>
+
+    <view wx:if="{{detailData.toUseText}}" class='x-button-use'>
+      <navigator url='../receive/receive?id={{detailData.id}}'>
+        {{detailData.toUseText}}
+      </navigator>
+    </view>
+    
+    <view wx:if="{{detailData.usedText}}" class='x-button-used'>
+      <navigator url='../receive/receive?id={{detailData.id}}'>
+        {{detailData.usedText}}
+      </navigator>
+    </view>
+    
+    <navigator url='../receive/receive?id={{detailData.id}}'>
+      <view wx:if="{{detailData.receiveText}}" class='x-receive'>{{detailData.receiveText}}</view>
+    </navigator>
   </view>
   <view class='x-detail-bottom' wx:if="{{detailData.sentFriend}}">
-    <view class='x-bottom-con'>{{detailData.sentFriend}}</view>
+    <navigator url='../detail/detail?id={{detailData.id}}'>
+      <view class='x-bottom-con'>{{detailData.sentFriend}}</view>
+    </navigator>
   </view>
 </view>
