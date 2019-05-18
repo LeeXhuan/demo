@@ -15,10 +15,22 @@
     background-color: #fff;
     margin: 100rpx auto 0;
     border-radius: 4rpx;
-    padding: 48rpx 0 0 64rpx;
+    padding: 48rpx 64rpx 0;
 }
 #l-receive .l-container .l-title{
     font-size: 36rpx;
     color: #202728;
     line-height: 48rpx;
+    margin-bottom: 32rpx;
+}
+#l-receive .l-container .l-body{
+    height: 580rpx;
+    overflow: scroll;
+}
+#l-receive .l-container .l-footer{
+    width: 100%;
+    text-align: center;
+    font-size: 28rpx;
+    color: #00D1F5;
+    line-height: 42px;
 }
