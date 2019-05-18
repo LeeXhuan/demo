@@ -13,6 +13,7 @@
     font-size: 28rpx;
     color: #6E7375;
     background: #fff;
+    z-index: 999;
 }
 #l-index .l-active{
     color: #00D1F5;
