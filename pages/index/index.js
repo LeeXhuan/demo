@@ -33,7 +33,7 @@ Page({
         id: 1,
         bgUrl: `${url}ticket-mine@3x.png`,
         iconUrl: `${url}to_be_used@3x.png`,
-        name: "珠海公交专用",
+        name: "新疆土耳其公交专用",
         money: "1.00",
         source: "好友赠送"
       },
@@ -43,16 +43,24 @@ Page({
         iconUrl: `${url}be_gifted@3x.png`,
         name: "珠海公交专用",
         money: "1.00",
+        source: "长途站赠票"
+      },
+      {
+        id: 4,
+        bgUrl: `${url}ticket-mine2@3x.png`,
+        iconUrl: `${url}used@3x.png`,
+        name: "珠海公交专用",
+        money: "1.00",
         source: "好友赠送"
       },
       {
         id: 3,
         bgUrl: `${url}ticket-mine2@3x.png`,
-        iconUrl: `${url}be_gifted@3x.png`,
+        iconUrl: `${url}dated@3x.png`,
         name: "珠海公交专用",
         money: "1.00",
         source: "好友赠送"
-      },
+      }
     ];
     // 数据更改
     this.setData({

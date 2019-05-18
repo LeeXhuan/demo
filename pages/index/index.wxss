@@ -3,6 +3,10 @@
     display: flex;
 }
 #l-index .l-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     justify-content: space-around;
     height: 104rpx;
     line-height: 104rpx;
@@ -14,6 +18,7 @@
     color: #00D1F5;
 }
 #l-index .l-container{
+    margin-top: 104rpx;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -38,6 +43,11 @@
     line-height: 44rpx;
     width: 128rpx;
     height: 88rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 #l-index .l-container .l-list .l-title .l-icon{
     width: 84rpx;
@@ -56,4 +66,22 @@
     color: #737779;
     text-align: center;
     line-height: 24px;
+}
+#l-index .l-no-data{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#l-index .l-no-data .no-data-img{
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+}
+#l-index .l-no-data .no-data-text{
+    margin-top: 24rpx;
+    font-size: 32rpx;
+    color: #8F989D;
+    text-align: center;
 }

@@ -6,7 +6,7 @@
             <view wx:else>{{item.name}}</view>
         </view>
     </view>
-    <view class="l-container">
+    <view class="l-container" wx:if="{{listData.length}}">
         <navigator class="l-list" wx:for="{{listData}}" wx:for-item="item"  wx:key="index" style="background: url({{item.bgUrl}});background-size: 100% 100%;"  url="../detail/detail?id={{item.id}}">
             <view class="l-title">
                 <view class="l-name">{{item.name}}</view>
@@ -15,5 +15,11 @@
             <view class="l-money">{{item.money}}元</view>
             <view class="l-source">{{item.source}}</view>
         </navigator>
+    </view>
+    <view wx:else class="l-flex l-no-data">
+        <view>
+            <image class="no-data-img" src='https://raw.githubusercontent.com/LeeXhuan/demo/master/images/no-data.png'></image>
+            <view class="no-data-text">尚未找到车票！</view>
+        </view>
     </view>
 </view>
