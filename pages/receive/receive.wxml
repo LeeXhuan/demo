@@ -1,2 +1,6 @@
 <!--pages/receive/receive.wxml-->
-<text>pages/receive/receive.wxml</text>
+<view id='l-receive'>
+  <view class='l-container'>
+    <view class="l-title">领取详情</view>
+  </view>
+</view>

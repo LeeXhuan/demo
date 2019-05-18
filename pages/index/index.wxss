@@ -1,8 +1,8 @@
 /**index.wxss**/
-#index .flex{
+#l-index .l-flex{
     display: flex;
 }
-#index .nav{
+#l-index .l-nav{
     justify-content: space-around;
     height: 104rpx;
     line-height: 104rpx;
@@ -10,10 +10,10 @@
     color: #6E7375;
     background: #fff;
 }
-#index .active{
+#l-index .l-active{
     color: #00D1F5;
 }
-#index .container{
+#l-index .l-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,35 +21,35 @@
     box-sizing: border-box;
     padding: 0 42rpx 0;
 }
-#index .container .list{
+#l-index .l-container .l-list{
     margin-top: 32rpx;
     width: 308rpx;
     height: 396rpx;
     box-sizing: border-box;
     padding: 40rpx 48rpx 40rpx 40rpx;
 }
-#index .container .list .title{
+#l-index .l-container .l-list .l-title{
     display: flex;
     justify-content: space-between;
 }
-#index .container .list .title .name{
+#l-index .l-container .l-list .l-title .l-name{
     font-size: 28rpx;
     color: #FFFFFF;
     line-height: 44rpx;
     width: 128rpx;
     height: 88rpx;
 }
-#index .container .list .title .icon{
+#l-index .l-container .l-list .l-title .l-icon{
     width: 84rpx;
     height: 32rpx;
     margin-top: 8rpx;
 }
-#index .container .list .money{
+#l-index .l-container .l-list .l-money{
     font-size: 56rpx;
     color: #FFFFFF;
     line-height: 88rpx;
 }
-#index .container .list .source{
+#l-index .l-container .l-list .l-source{
     margin-top: 80rpx;
     width: 100%;
     font-size: 28rpx;

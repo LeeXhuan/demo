@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/receive/receive",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/notice/notice"
   ],
   "window": {
     "backgroundTextStyle": "light",
