@@ -51,7 +51,9 @@
 .x-use-icon{
   width: 64rpx;
   height: 64rpx;
-  margin-right: 16rpx; 
+  margin-right: 16rpx;
+  border-radius: 50%;
+  border: 1rpx solid #fff;
 }
 .x-user-text{
   flex: 3;

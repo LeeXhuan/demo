@@ -8,12 +8,15 @@
     <view class='x-price-text'>{{detailData.priceText}}</view>
     <view class='x-sent-icon' style='background: url({{detailData.sentIcon}}) no-repeat center/cover'></view>
     <view class='x-user-info'>
-      <image class='x-use-icon' wx:if="{{detailData.userIcon}}" src='{{detailData.userIcon}}'></image>
+      <view wx:if="{{detailData.userIcon}}" class='x-use-icon' style='background: url({{detailData.userIcon}}) no-repeat center/cover'>
+      </view>
       <text class='x-user-text'>{{detailData.userText}}</text>
     </view>
     <view class='x-content'>
       <text class='x-content-text'>{{detailData.contentText}}</text>
-      <image class='x-content-icon' src="{{detailData.contentIcon}}"></image>
+      <navigator url='../notice/notice'>
+        <image class='x-content-icon' src="{{detailData.contentIcon}}"></image>
+      </navigator>
     </view>
     <view wx:if="{{detailData.buttonText}}" class='x-button'>{{detailData.buttonText}}</view>
     <view wx:if="{{detailData.toUseText}}" class='x-button-use'>{{detailData.toUseText}}</view>

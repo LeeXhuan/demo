@@ -12,7 +12,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
       bgImg: `${url}/ticket_detail%403x.png`,
@@ -32,26 +31,45 @@ Page({
     }
     switch (options.id) {
       case '1': 
-        dataOptions.sentIcon = `${url}/Combined%20Shape%403x.png`;
+        dataOptions.sentIcon = `${url}/to_be_used%403x.png`;
         dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
         dataOptions.userText = '远行的帆…送你一张车票';
         dataOptions.contentText = '请于6月30日前使用！';
         dataOptions.buttonText = '';
         dataOptions.toUseText = '立即使用';
-        dataOptions.usedText = '领取详情';
+        dataOptions.usedText = '';
+        dataOptions.receiveText = '领取详情';
         dataOptions.sentFriend = '赠给好友';
         break;
       case '2':
-        dataOptions.sentIcon = `${url}/Combined%20Shape%403x.png`;
+        dataOptions.sentIcon = `${url}/sent%403x.png`;
         dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
-        dataOptions.userText = '远行的帆…送你一张车票';
-        dataOptions.contentText = '请于6月30日前使用！';
+        dataOptions.userText = '你送出一张车票，正在等待领取';
+        dataOptions.contentText = '有效期至 06-13 23:59!';
         dataOptions.buttonText = '';
-        dataOptions.toUseText = '立即使用';
-        dataOptions.usedText = '领取详情';
-        dataOptions.sentFriend = '赠给好友';
+        dataOptions.toUseText = '转赠详情';
+        dataOptions.usedText = '';
+        dataOptions.sentFriend = '';
         break;
       case '3':
+        dataOptions.sentIcon = `${url}/used%403x.png`;
+        dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
+        dataOptions.userText = '远行的帆…送你一张车票';
+        dataOptions.contentText = '使用日期 06-13 23:59!';
+        dataOptions.buttonText = '';
+        dataOptions.toUseText = '';
+        dataOptions.usedText = '使用详情';
+        dataOptions.sentFriend = '';
+        break;
+      case '4':
+        dataOptions.sentIcon = `${url}/dated%403x.png`;
+        dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
+        dataOptions.userText = '远行的帆…送你一张车票';
+        dataOptions.contentText = '过期日 06-13 23:59!!';
+        dataOptions.buttonText = '';
+        dataOptions.toUseText = '';
+        dataOptions.usedText = '使用详情';
+        dataOptions.sentFriend = '';
         break;
     }
     this.setData({
