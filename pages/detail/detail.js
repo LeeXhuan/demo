@@ -23,9 +23,10 @@ Page({
       userText: '远行的帆…送你一张车票',
       contentText: '恭喜您，领取成功！',
       contentIcon: `${url}/needtoknow%403x.png`,
-      buttonText: '',
-      toUseText: '立即使用',
-      receiveText: '领取详情',
+      buttonText: '', // 立即领取
+      toUseText: '', // 立即使用
+      usedText: '使用详情', // 使用详情
+      receiveText: '', // 领取详情
       sentFriend: '赠给好友',
     }
     this.setData({

@@ -17,6 +17,7 @@
     </view>
     <view wx:if="{{detailData.buttonText}}" class='x-button'>{{detailData.buttonText}}</view>
     <view wx:if="{{detailData.toUseText}}" class='x-button-use'>{{detailData.toUseText}}</view>
+    <view wx:if="{{detailData.usedText}}" class='x-button-used'>{{detailData.usedText}}</view>
     <view wx:if="{{detailData.receiveText}}" class='x-receive'>{{detailData.receiveText}}</view>
   </view>
   <view class='x-detail-bottom' wx:if="{{detailData.sentFriend}}">

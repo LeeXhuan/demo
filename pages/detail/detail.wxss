@@ -79,7 +79,8 @@
   height: 40rpx;
 }
 .x-button,
-.x-button-use{
+.x-button-use,
+.x-button-used{
   margin: 0 48rpx 0 72rpx;
   width: 152rpx;
   height: 60rpx;
@@ -93,6 +94,10 @@
 .x-button-use{
   background: #D0F8FF;
   color: #00D1F5;
+}
+.x-button-used{
+  background: #F6F6F6;
+  color: #727C81;
 }
 .x-receive{
   float: right;
