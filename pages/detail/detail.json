@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#212526",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "领取车票",
+  "backgroundColor": "#212526",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "disableScroll": false
 }
