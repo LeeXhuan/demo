@@ -34,3 +34,34 @@
     color: #00D1F5;
     line-height: 42px;
 }
+.ul{
+	border-radius: 15rpx;
+}
+.ul .boxline:after{
+  content:'';
+  display: block;
+  border-left:1px solid #e7e7e7;
+  position:absolute;
+  top:10rpx;
+  left:5rpx;
+  height:100%;
+}
+.ul .li:last-child .boxline:after{
+  border:none;
+}
+.circle{
+  background:#d7d7d7;
+  width:16rpx;
+  height:16rpx;
+  top:5rpx;
+  left:-3rpx;
+  border-radius:50rpx;
+  z-index: 10;
+}
+.having .circle{
+  background:#e02f49;
+  width:20rpx;
+  height:20rpx;
+  border:5rpx solid #f9d5db;
+  left:-6rpx;
+}

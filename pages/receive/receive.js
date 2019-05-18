@@ -15,7 +15,7 @@ Page({
     const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
       title:"领取详情",
-
+      listData: [],
     }
     this.setData({
       receiveData: dataOptions,
