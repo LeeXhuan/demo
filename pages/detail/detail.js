@@ -12,6 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options);
     const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
       bgImg: `${url}/ticket_detail%403x.png`,
@@ -28,6 +29,30 @@ Page({
       usedText: '使用详情', // 使用详情
       receiveText: '', // 领取详情
       sentFriend: '赠给好友',
+    }
+    switch (options.id) {
+      case '1': 
+        dataOptions.sentIcon = `${url}/Combined%20Shape%403x.png`;
+        dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
+        dataOptions.userText = '远行的帆…送你一张车票';
+        dataOptions.contentText = '请于6月30日前使用！';
+        dataOptions.buttonText = '';
+        dataOptions.toUseText = '立即使用';
+        dataOptions.usedText = '领取详情';
+        dataOptions.sentFriend = '赠给好友';
+        break;
+      case '2':
+        dataOptions.sentIcon = `${url}/Combined%20Shape%403x.png`;
+        dataOptions.userIcon = `${url}/ticket_portrait%403x.png`;
+        dataOptions.userText = '远行的帆…送你一张车票';
+        dataOptions.contentText = '请于6月30日前使用！';
+        dataOptions.buttonText = '';
+        dataOptions.toUseText = '立即使用';
+        dataOptions.usedText = '领取详情';
+        dataOptions.sentFriend = '赠给好友';
+        break;
+      case '3':
+        break;
     }
     this.setData({
       detailData: dataOptions,
