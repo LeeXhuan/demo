@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    receiveData: {},
+    receiveData: {}
   },
 
   /**
@@ -15,8 +15,40 @@ Page({
     const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
       title:"领取详情",
-      listData: [],
+      listData: [
+        {
+          name:"珠海长途站赠送车票",
+          time:"5-18 20:14",
+          road:""
+        },
+        {
+          name:"领取车票",
+          time:"5-18 20:14",
+          road:""
+        },
+        {
+          name:"我使用车票",
+          time:"5-18 20:14",
+          road:"318路"
+        },
+        {
+          name:"领取车票",
+          time:"5-18 20:14",
+          road:""
+        },
+        {
+          name:"领取车票",
+          time:"5-18 20:14",
+          road:""
+        },
+        {
+          name:"领取车票",
+          time:"5-18 20:14",
+          road:""
+        }
+      ]
     }
+    console.log(dataOptions.listData);
     this.setData({
       receiveData: dataOptions,
     })

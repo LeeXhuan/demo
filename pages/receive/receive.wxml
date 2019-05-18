@@ -3,28 +3,12 @@
   <view class='l-container'>
     <view class="l-title">{{receiveData.title}}</view>
     <view class="l-body">
-      <view class="pl15 pr15 pt15 pb10 ul">
-				<view class="having li rela pl20 pb10">
-					<view class="boxline">
-						<view>订单:154454545客户已签收</view>
-						<view class="ft13 mt10 c777">2016-01-25 15:45:54</view>
-						<text class="circle abs"></text>
-					</view>
+			<view class="l-content" wx:for="{{receiveData.listData}}" wx:for-item="item" wx:key="index">
+				<view class="l-text-box">
+					<view class="l-text">{{item.name}}<view class="l-spot"></view></view>
+					<view class="l-road">{{item.road}}</view>
 				</view>
-				<view class="li rela pl20 pb10">
-					<view class="boxline">
-						<view>由叉叉人 扫描确认，CQJL梁军 送货，联系电话：13254521155，投诉电话：023-54587455</view>
-						<view class="ft13 mt10 c777"><text class="mr10">2016-01-25</text> <text>15:45:54</text></view>
-						<text class="circle abs"></text>
-					</view>
-				</view>
-				<view class="having li rela pl20 pb10">
-					<view class="boxline">
-						<view>订单:154454545客户已签收</view>
-						<view class="ft13 mt10 c777">2016-01-25 15:45:54</view>
-						<text class="circle abs"></text>
-					</view>
-				</view>
+				<view class="l-time">{{item.time}}</view>
 			</view>
     </view>
     <view class="l-footer" bindtap="return">返回</view>
