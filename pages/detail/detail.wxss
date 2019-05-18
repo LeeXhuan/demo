@@ -30,8 +30,11 @@
   height: 56rpx;
 }
 .price-text{
+  height: 88rpx;
   font-size: 48rpx;
   color: #fff;
   text-align: left;
   padding-left: 72rpx;
+  line-height: 88rpx;
+  margin-bottom: 24rpx;
 }

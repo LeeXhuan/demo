@@ -12,10 +12,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const url = 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images';
     const dataOptions = {
-      bgImg: 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images/ticket_detail%403x.png',
+      bgImg: `${url}/ticket_detail%403x.png`,
       title: '珠海公交专用',
-      titleIcon: 'https://raw.githubusercontent.com/LeeXhuan/demo/master/images/ticket_portrait%403x.png',
+      titleIcon: `${url}/ticket_portrait%403x.png`,
       priceText: '1.00元公交车票',
       sentIcon: '../../images/ticket_detail_bg.png',
       userIcon: '../../images/ticket_detail_bg.png',
